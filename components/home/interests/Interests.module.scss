@@ -25,10 +25,6 @@
         width: 5rem;
         fill: $color-primary-light;
         transition: all .2s;
-
-        &:hover {
-            fill: $color-primary;
-        }
     }
 
 }
@@ -40,6 +36,10 @@
 
     &:hover h4 {
         color: $color-primary;
+    }
+
+    &:hover .interests__icon {
+        fill: $color-primary;
     }
 
     & h4 {

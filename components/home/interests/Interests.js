@@ -7,7 +7,7 @@ const Interests = function () {
   return (
     <section className={classes["interests"]} id="interests">
       <h2
-        class={`${classes["heading-2"]} ${typography["heading-2"]} ${typography["heading-2--purple"]}`}
+        className={`${classes["heading-2"]} ${typography["heading-2"]} ${typography["heading-2--purple"]}`}
       >
         Interests
       </h2>

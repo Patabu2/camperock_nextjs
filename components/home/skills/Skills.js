@@ -1,132 +1,52 @@
+import classes from "./Skills.module.scss";
+import typography from "../../../styles/typography.module.scss";
+
+import SkillSection from "./SkillSection";
+
+const programmingDevOps = [
+  ['Python', {color: 'orange', value: 90}],
+  ['JavaScript', {color: 'orange', value: 90}],
+  ['Node.js', {color: 'orange', value: 65}],
+  ['HTML & CSS', {color: 'orange', value: 85}],
+  ['Docker', {color: 'orange', value: 50}],
+  ['Databases (SQL & No SQL)', {color: 'orange', value: 85}],
+];
+
+const deepLearning = [
+  ['Computer Vision', {color: 'orangered', value: 90}],
+  ['Generative Deep Learning', {color: 'orangered', value: 65}],
+  ['Deep Reinforcement Learning', {color: 'orangered', value: 50}],
+  ['Time Series Analysis', {color: 'orangered', value: 65}]
+]
+
+const dataAnalytics = [
+  ['Visualization', {color: 'cornflowerblue', value: 95}],
+  ['Teaching/Presenting', {color: 'cornflowerblue', value: 100}],
+  ['Machine Learning', {color: 'cornflowerblue', value: 70}],
+  ['Statistical Methods', {color: 'cornflowerblue', value: 59}]
+]
+
+const languages = [
+  ['German', {color: 'green', value: 65}],
+  ['English', {color: 'green', value: 100}],
+  ['Spanish', {color: 'green', value: 100}]
+];
+
 const Skills = function () {
   return (
-    <section class="skills" id="skills">
+    <section className={classes["skills"]} id="skills">
       <div>
-        <h2 class="heading-2 heading-2--light mb-md">Stats</h2>
+        <h2
+          className={`${typography["heading-2"]} ${typography["heading-2--light"]} mb-md`}
+        >
+          Stats
+        </h2>
       </div>
-      <div class="skills__display">
-        <div class="skills__category">
-          <h4 class="heading-4">Programming & DevOps</h4>
-          <ul class="skills__list">
-            <li class="skills__skill mb-sm">
-              <p>Python</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-            <li class="skills__skill mb-sm">
-              <p>JavaScript</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-            <li class="skills__skill mb-sm">
-              <p>Node.JS</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-            <li class="skills__skill mb-sm">
-              <p>HTML & CSS</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-            <li class="skills__skill mb-sm">
-              <p>Docker</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-            <li class="skills__skill mb-sm">
-              <p>Databases (SQL)</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="skills__skill">
-          <h4 class="heading-4">Deep Learning (Tensorflow)</h4>
-          <ul class="skills__list">
-            <li class="skills__skill mb-sm">
-              <p>Computer vision</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-            <li class="skills__skill mb-sm">
-              <p>Generative Deep Learning</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-            <li class="skills__skill mb-sm">
-              <p>Deep Reinforcement Learning</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-            <li class="skills__skill mb-sm">
-              <p>Time Series Analysis</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="skills__skill">
-          <h4 class="heading-4">Data Analytics</h4>
-          <ul class="skills__list">
-            <li class="skills__skill mb-sm">
-              <p>Visualization</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-            <li class="skills__skill mb-sm">
-              <p>Teaching/presenting</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-            <li class="skills__skill mb-sm">
-              <p>Machine Learning</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-            <li class="skills__skill mb-sm">
-              <p>Statistical Methods</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="skills__skill">
-          <h4 class="heading-4">Languages</h4>
-          <ul class="skills__list">
-            <li class="skills__skill mb-sm">
-              <p>German</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-            <li class="skills__skill mb-sm">
-              <p>English</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-            <li class="skills__skill mb-sm">
-              <p>Spanish</p>
-              <div class="skills__bar">
-                <div class="skills__progress"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div className={classes["skills__display"]}>
+        <SkillSection title='Programming & DevOps' skills={programmingDevOps} />
+        <SkillSection title='Deep Learning (TensorFlow)' skills={deepLearning} />
+        <SkillSection title='Data Analytics' skills={dataAnalytics} />
+        <SkillSection title='Languages' skills={languages} />
       </div>
     </section>
   );

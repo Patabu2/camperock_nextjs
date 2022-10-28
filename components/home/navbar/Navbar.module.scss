@@ -4,6 +4,7 @@
     height: 10vh;
     position: fixed;
     background-color: #fff;
+    border-bottom: 2px solid $color-primary;
     width: 100vw;
     z-index: 9999;
 
@@ -154,12 +155,8 @@
     }
 }
 
-#lc {
-    font-size: 5rem;
+.lc {
     margin-left: 5rem;
-    color: $color-accent;
-
-    & span {
-        color: $color-accent-2;
-    }
+    width: 10rem;
+    height: 10rem;
 }
