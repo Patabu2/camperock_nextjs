@@ -4,7 +4,12 @@ import classes from "./Introduction.module.scss";
 import typography from "../../../styles/typography.module.scss";
 
 const Introduction = function () {
-  /**/
+  const projectsButtonClick = function (e) {
+    // Select target and scroll to it
+    document.querySelector('#projects').scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <header className={classes["bio"]}>
       <div className={classes["bio__background-1"]}></div>
@@ -12,11 +17,11 @@ const Introduction = function () {
 
       <div className={classes["bio__presentation"]}>
         <div className={classes["bio__picture"]}>
-          <img src="yo.jpg" alt="Picture of me" />
+          <img
+            src="logos/white_logo_transparent_background.png"
+            alt="Picture of me"
+          />
 
-          <h2 className={`${typography["heading-2"]} mb-sm`}>
-            Luis Campero
-          </h2>
           <div className={`${classes["bio__line"]} mb-md`}></div>
 
           <h4 className={`${typography["heading-4"]} mb-lg`}>
@@ -53,16 +58,17 @@ const Introduction = function () {
           </h2>
           <div>
             <ButtonGlitch text="Resume" />
-            <ButtonGlitch text="Projects" />
+            <ButtonGlitch text="Projects" onClick={projectsButtonClick} />
           </div>
 
           <p className="mb-sm">
-            I am an Artificial Intelligence enthusiast and researcher with a
+            I am an Artificial Intelligence professional and researcher with a
             curious mind and a continuous desire to learn more about this
             wonderful world and its mysteries.
           </p>
           <p>
-            My second passion is Web Development. What would we do without it?
+            My second passion is Web Development. What would we do without the
+            web?
           </p>
         </div>
       </div>

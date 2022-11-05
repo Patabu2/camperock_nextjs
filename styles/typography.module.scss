@@ -4,6 +4,11 @@
     font-family: $font-primary;
 }
 
+.paragraph {
+    @extend %heading;
+    font-size: 1.7rem;
+}
+
 .heading-1 {
     @extend %heading;
     font-size: 4.5rem;

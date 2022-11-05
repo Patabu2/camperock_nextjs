@@ -5,7 +5,7 @@ const Skill = function (props) {
   const color = props.params.color;
   return (
     <li className={`${classes["skills__skill"]} mb-sm`}>
-      <p>{props.name}</p>
+      <p>{`${props.name}: ${width}`}</p>
       <div className={classes["skills__bar"]}>
         <div
           style={{

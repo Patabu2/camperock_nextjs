@@ -14,9 +14,17 @@
     }
 
     &__background-1 {
-        background-color: $color-primary;
+        // background-color: $color-primary;
         grid-column: 1 / 4;
         grid-row: 1 / 2;
+
+        background-image: linear-gradient(
+            to bottom,
+            rgba(145, 107, 191, 0.5),
+            rgba(61, 44, 141, 0.9)
+        ), url('/camperock.jpg');
+        background-position: center;
+        background-size: cover;
 
         @media only screen and (max-width: $bp-large) {
             display: none;
@@ -147,7 +155,7 @@
         }
 
         & p {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             font-weight: 400;
 
             @media only screen and (max-width: $bp-largest) {

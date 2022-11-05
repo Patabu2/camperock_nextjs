@@ -1,0 +1,92 @@
+@import '../../../styles/variables';
+
+
+.trajectory {
+    margin-top: 10rem;
+    grid-column: 3 / 11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-top: 1px solid $color-primary-light;
+        padding: 5rem 0;
+        margin-top: 2rem;
+    }
+
+    &__element {
+        display: flex;
+        width: 80%;
+        position: relative;
+        justify-content: center;
+        font-size: 1.7rem;
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    &__years {
+        padding-right: 3rem;
+        text-align: right;
+        width: 50%;
+        position: relative;
+
+        @media only screen and (max-width: $bp-small) {
+            padding-right: 0;
+            padding-left: 3rem;
+            text-align: left;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: $color-primary-light;
+            top: 8px;
+            right: -5px; // width / 2
+
+            @media only screen and (max-width: $bp-small) {
+                left: 0;
+            }
+            
+        }
+
+        &-years {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        &-title {
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+    }
+
+    &__description {
+        padding-left: 3rem;
+        text-align: left;
+        width: 50%;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
+
+        &-company {
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+    }
+}

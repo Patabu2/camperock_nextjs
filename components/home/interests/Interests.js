@@ -13,12 +13,12 @@ const Interests = function () {
       </h2>
       <Interest
         title="Artificial Intelligence"
-        content="From ingenious search algorithms to machine and deep learning. What's not to love?"
+        content="My experience ranges from ingenious search algorithms to machine and deep learning. What's not to love?"
         icon="img/sprite.svg#icon-cogs"
       />
       <Interest
         title="Deep Learning"
-        content="I am passionate on understanding and expanding our knowledge on this powerful technological achievement."
+        content="One of the most powerful technological achievements of humanity so far. Exploring and exploiting its power is in my destiny."
         icon="img/sprite.svg#icon-terminal"
       />
       <Interest
@@ -28,12 +28,12 @@ const Interests = function () {
       />
       <Interest
         title="Web Development"
-        content="The world is more connected than ever before. Let's keep it going!"
+        content="The world is more connected than ever before, and I am more excited than ever before about it."
         icon="img/sprite.svg#icon-embed2"
       />
       <Interest
         title="Computational neurosciences"
-        content="How can machines help us understand ourselves? How can our brains interact with machines? Oh my!"
+        content="How can machines help us understand ourselves? How can we replicate what billions of years of evolution did? Oh my..."
         icon="img/sprite.svg#icon-accessibility"
       />
       <Interest
