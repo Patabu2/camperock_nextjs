@@ -28,7 +28,7 @@ const Navbar = function () {
   // 
   return (
     <nav className={classes["navbar"]}>
-      <img className={classes["lc"]} src='logos/color_primary_logo.png' alt='My logo' />
+      <img className={classes["lc"]} src='logos/logo_transparent_background.png' alt='My logo' />
       <input
         type="checkbox"
         className={classes["navbar__checkbox"]}

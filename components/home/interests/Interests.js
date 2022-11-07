@@ -13,7 +13,7 @@ const Interests = function () {
       </h2>
       <Interest
         title="Artificial Intelligence"
-        content="My experience ranges from ingenious search algorithms to machine and deep learning. What's not to love?"
+        content="My experience ranges from ingenious search algorithms to machine and deep learning. I will welcome our machine overlords with open arms."
         icon="img/sprite.svg#icon-cogs"
       />
       <Interest
