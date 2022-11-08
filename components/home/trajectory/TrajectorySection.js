@@ -10,7 +10,7 @@ const TrajectorySection = function (props) {
       <div className={classes["trajectory__section"]}>
         {
           props.data.map((el, i) => {
-            return <TrajectoryElement dates={el.dates} title={el.title} company={el.company} description={el.description} />
+            return <TrajectoryElement key={i} dates={el.dates} title={el.title} company={el.company} description={el.description} />
           })
         }
       </div>

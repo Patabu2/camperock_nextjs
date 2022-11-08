@@ -12,19 +12,14 @@ import classes from "./Home.module.scss";
 const Home = function () {
   {
     return (
-      <>
-        <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        </Head>
-        <div className={classes["container"]}>
-          <Navbar />
-          <Introduction />
-          <Interests />
-          <Skills />
-          <Trajectory />
-          <Projects />
-        </div>
-      </>
+      <div className={classes["container"]}>
+        <Navbar />
+        <Introduction />
+        <Interests />
+        <Skills />
+        <Trajectory />
+        <Projects />
+      </div>
     );
   }
 };

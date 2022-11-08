@@ -37,7 +37,7 @@ const Navbar = function () {
         ref={navCheckbox}
       />
       <label
-        for="navi-toggle"
+        htmlFor="navi-toggle"
         className={classes["navbar__button"]}
         ref={navBarButton}
       >
