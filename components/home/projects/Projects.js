@@ -15,6 +15,7 @@ const Projects = function () {
 
         <Project title="Neural network from scratch" />
 */
+
   return (
     <section id="projects" className={classes["projects"]}>
       <h2 className={typography["heading-2"]}>Some of my work</h2>
