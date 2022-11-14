@@ -34,6 +34,7 @@ const Projects = function () {
       />
       <Project
         title="REINFORCE - Deep Reinforcement Learning"
+        href="https://github.com/Patabu2/REINFORCE"
         img="https://user-images.githubusercontent.com/46114496/200649849-6c81d412-4175-43c0-930a-5eb592a1f909.png"
       />
 

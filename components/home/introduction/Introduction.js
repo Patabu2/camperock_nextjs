@@ -10,6 +10,10 @@ const Introduction = function () {
       behavior: "smooth",
     });
   };
+
+  const resumeButtonOnClick = function() {
+    window.open('https://1drv.ms/u/s!Ajzh7FMm_QFbmYkFzjZ_YaB0l9ZSRg?e=5MKdqa')
+  }
   return (
     <header className={classes["bio"]}>
       <div className={classes["bio__background-1"]}></div>
@@ -57,7 +61,7 @@ const Introduction = function () {
             A little bit of what I do:
           </h2>
           <div>
-            <ButtonGlitch text="Resume" />
+            <ButtonGlitch text="Resume" onClick={resumeButtonOnClick} />
             <ButtonGlitch text="Projects" onClick={projectsButtonClick} />
           </div>
 
