@@ -19,7 +19,7 @@ const Projects = function () {
   return (
     <section id="projects" className={classes["projects"]}>
       <h2 className={typography["heading-2"]}>Some of my work</h2>
-      <h3 className={typography["heading-3"]}>Publications</h3>
+      <h3 className={typography["heading-3"]}>Peer-reviewed publications</h3>
       <Project
         title="Deep Learning-based tauopathy biomarker quantification"
         href="https://www.mdpi.com/2079-7737/11/8/1131"
@@ -50,9 +50,16 @@ const Projects = function () {
         href="https://github.com/Patabu2/machine_learning_from_scratch/blob/main/PCA.ipynb"
       />
 
+      <h3 className={typography["heading-3"]}>Web development</h3>
+      <Project
+        title="Paisa web admin"
+        img="/projects/logo_paisa.png"
+        href="https://paisa-admin-dev.azurewebsites.net/"
+      />
+
       <h3 className={typography["heading-3"]}>Search algorithms</h3>
       <Project
-        title="Rubik's cube - A*  algorithm"
+        title="Solving Rubik's cube - A*  algorithm"
         href="https://github.com/Patabu2/rubiks-cube-search"
         img="/projects/github.png"
       />
